@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const pg = require("pg");
 const cors = require('cors');
-
 app.use(cors());
 
 const client = new pg.Pool({
