@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const pg = require("pg");
 const cors = require('cors');
+const port= process.env.port || 1124; 
 app.use(cors());
 
 const client = new pg.Pool({

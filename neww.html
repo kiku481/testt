@@ -3,7 +3,7 @@
         <title>이게 내가 할 수 있겟냐고</title>
         <script>
             async function onLoad() {
-                const fetch = await fetch('http://localhost:1124/menu');
+                const fetch = await fetch('https://testt-ben7.onrender.com/menu');
                 const result = await fetch.text();
                 document.getElementsByTagName("div")[0].innerText = result;
             }
